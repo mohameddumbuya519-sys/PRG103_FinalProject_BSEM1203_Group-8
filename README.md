@@ -1,85 +1,84 @@
-📚 Student Record Management System (Tkinter + JSON)
+Student Record Management System (Tkinter + JSON + Matplotlib)
+Overview
 
-A simple desktop-based Student Record Management System built using Python Tkinter for the GUI and JSON file storage for persistent data management.
+This project is a desktop-based Student Record Management System built using Python. It provides a simple graphical user interface (GUI) for managing student records, including adding, updating, deleting, searching, and visualizing data using charts.
 
-🚀 Features
-🔐 Admin Login System
-➕ Add new students
-🔍 Search student records
-✏ Update student information
-🗑 Delete student records
-📊 Dashboard with total student count
-💾 Automatic data saving using JSON file
-🎨 Modern dark-themed GUI (Tkinter)
-🛠 Technologies Used
-Python 3
-Tkinter (GUI framework)
-JSON (Data storage)
-OS module (file handling)
-📁 Project Structure
-Student-Record-System/
-│
+The system uses:
+
+Tkinter for the GUI
+JSON for data storage
+Matplotlib for data visualization
+
+Features
+Login System
+Secure admin login before accessing the dashboard
+Default credentials:
+Username: admin
+Password: 1234
+
+Record Management
+ Add new student records
+ Update existing records
+ Delete records
+ Search records by ID, Name, Gender, or Status
+ View all records in a table (Treeview)
+
+ Data Visualization
+ Bar Chart → Status distribution (Active, Pending, Inactive)
+ Pie Chart → Gender distribution
+ Line Graph → Student status trend visualization
+ 
+ Technologies Used
+ Tool	Purpose
+ Python	Core programming language
+ Tkinter	GUI development
+ JSON	Data storage
+ Matplotlib	Charts and graphs
+
+ Project Structure
+student-record-system
 ├── main.py              # Main application file
-├── students.json        # Auto-created data storage file
+├── records.json         # Data storage file (auto-created)
 └── README.md            # Project documentation
-⚙️ How It Works
-The program starts with a Login Screen
-Admin enters username and password:
-Username: admin
-Password: password123
-If login is successful, the Dashboard opens
-All student data is:
-Stored in memory (Python list)
-Saved permanently in students.json
-▶️ How to Run the Project
-1. Install Python
 
-Make sure Python 3 is installed:
+How to Run the Project
+1. Install Requirements
 
-python --version
-2. Run the program
+Make sure Python is installed. Then install matplotlib:
+
+pip install matplotlib
+2. Run the Program
 python main.py
-👤 Default Login Credentials
-Username: admin
-Password: password123
-💾 Data Storage (JSON)
+ Data Storage
 
-Student data is saved in students.json like this:
+All student records are stored in a JSON file:
 
 [
-    {
-        "ID": "1",
-        "Name": "John",
-        "Age": 20,
-        "Course": "Computer Science"
-    }
+  {
+    "ID": "1001",
+    "Name": "John Kamara",
+    "Gender": "Male",
+    "Status": "Active"
+  }
 ]
-🧩 Core Functionalities
-➕ Add Student
-Enter ID, Name, Age, Course
-Data is saved automatically
-🔍 Search Student
-Search using Student ID
-Displays full record
-✏ Update Student
-Modify existing student details
-🗑 Delete Student
-Remove student by ID
-🎨 UI Overview
-Dark modern dashboard theme
-Sidebar navigation menu
-Table view for student records
-Clean form-based input system
-📌 Future Improvements
-📊 Add charts and analytics dashboard
-🗄 Upgrade to SQLite or MySQL database
-🌐 Convert into a web application (Flask/Django)
-👥 Add multiple user roles (Admin, Teacher, Student)
-📄 Export data to PDF/Excel
-👨‍💻 Author
 
-Developed as a learning project using Python Tkinter.
+ How It Works
+The program starts with a login window
+After successful login, the dashboard opens
+Records are loaded from records.json
+Any changes (add/update/delete) are automatically saved
+Charts are generated dynamically using Matplotlib
+ Sample Functional Flow
 
-📜 License
+Login → Dashboard → Load Records → Manage Data → Save to JSON → Visualize Charts
 
-This project is for educational purposes only.b
+Notes
+Ensure records.json is in the same folder as main.py
+If file does not exist, default sample data will be used automatically
+GUI is built using Tkinter, so it works on Windows, Mac, and Linux
+ Author
+Developed using Python
+Purpose: Educational project for structured programming and GUI development
+License
+
+This project is for educational use only.
