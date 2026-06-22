@@ -13,8 +13,8 @@ Features
 Login System
 Secure admin login before accessing the dashboard
 Default credentials:
-Username: admin
-Password: 1234
+Username
+Password
 
 Record Management
  Add new student records
