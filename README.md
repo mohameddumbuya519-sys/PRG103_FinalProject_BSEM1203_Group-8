@@ -53,14 +53,13 @@ python main.py
 
 All student records are stored in a JSON file:
 
-[
+
   {
     "ID": "1001",
     "Name": "John Kamara",
     "Gender": "Male",
     "Status": "Active"
-  }
-]
+ 
 
  How It Works
 The program starts with a login window
